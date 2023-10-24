@@ -2,34 +2,43 @@
   margin-left : 80px;
   font-size : 18px;
 } */
-/* .row1,.row3{
-  display: flex;
-  justify-content: space-between;
-  
-}*/
+body{
+  margin-left: 100px;
+  margin-right: 100px;
+}
 .gridcontainer{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   text-align: center;
-  justify-content: center;
 }
+
 .heroes,.villains{
   box-shadow: 0px 0px 5px 0px   grey;
   border-radius: 5%;
   padding: 18px;
 }
-/*
+
 p{
   margin: 0%;
+}
 
-}h1{
+h1{
   margin: 0%;
   font-size: 50px;
   font-weight: lighter;
-} */
+}
+
 .row1, .row3{
   display: grid;
   grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(4,1fr);
   grid-gap:20px;
+}
 
+.heroes,.villains{
+  padding: 0%;
+}
+
+.row1 .heroes:last-child {
+  grid-column: 3; 
 }
